@@ -83,7 +83,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 用企业开发者计划账号可以添加他人分配角色及定义个人的特权，一个团队管理员角色几乎拥有组织团队总代理的所有权限。比如说，管理员角色可以管理整个团队而不需要任何批准，团队成员在得到团队总代理或者管理的允许后可以真机调试和给应用添加核心功能服务。
 
-购买开发者计划，请前往 [Apple Developer Program Enrollment](https://developer.apple.com/programs/enroll//)，按照指示操作。
+购买开发者计划，请前往 [Apple Developer Program Enrollment](https://developer.apple.com/programs/enroll//) ，按照指示操作。
 
 ### 在Xcode中添加关联Apple ID
 
@@ -131,15 +131,45 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 3.点击”Done“关闭对话框
 
+### 验证你的开发账户证书
 
+验证你有权限操作在开发者账号中的证书、标识和配置文件，且这些文件与Xcode中的相一致
 
+1. 用你的浏览器，打开网址 [developer.apple.com/account](https://developer.apple.com/account)
 
+2. 再出现的对话框中，输入你的Apple ID和密码，点击”Sign In“
 
+3.点击”Certificates，Identifiers & Profiles“
 
+<img src="./1.7.png" alt="图1.7" title="图1.7" width="700"/>
 
+4. 从左上角的下拉框”iOS，tvOS， watchOS“中，选择一个平台（tvOS和watchOS都包含在iOS中），对于Mac应用，选择OS X
 
+<img src="./1.8.png" alt="图1.8" title="图1.8" width="700"/>
 
+另外，从浏览器中直接进入到 [Certificates, Identifiers & Profiles](https://developer.apple.com/account/ios/certificate) 网页，你将要用你的开发者账号走认证流程，所以目前别退出登录。
 
+### 验证你的iTunes Connect证书
+
+你通过iTunes Connect输入你的行政机构和app的相关信息，信息甚至包含一些将要内置的功能服务-内购和游戏中心。如果你是一个购买了开发者计划的企业机构代理或者个人，你可以随便登录iTunes Connect，但是如果你只是团队的一个普通成员或者是团队的管理者角色，除非总代理单独创建一个iTunes Connect账号供你使用，否则你是无权限登录iTunes Connect的。
+
+虽然在这个文档中用不到iTunes Connect，但是现在做一个iTunes Connect证书的验证。
+
+1. 登录 [developer.apple.com/account](https://developer.apple.com/account)，然后在左侧点击”iTunes Connect“
+
+2. 选中”Take me straight to iTunes Connect...“ and click Go to iTunes Connect。
+
+<img src="./1.9.png" alt="图1.9" title="图1.9" width="700"/>
+
+    iTunes Connect主页上展示了我的应用，用户和角色，还有其它模块。
+
+<img src="./1.10.png" alt="图1.10" title="图1.10" width="700"/>
+
+    然后，你将可以在iTunes Connect中的 My Apps 这一栏输入应用的相关信息。
+
+3. 在右上角，你可以从弹出视图中选择”Sign Out“，退出
+
+另外，登录到 [itunesconnect.apple.com](https://itunesconnect.apple.com)，更多了解iTunes Connect请阅读iTunes Connect Developer Guide（iTunes Connect开发指南）。
 
 
 
