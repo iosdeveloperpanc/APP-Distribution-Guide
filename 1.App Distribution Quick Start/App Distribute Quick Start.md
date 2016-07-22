@@ -67,7 +67,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 如果你将发布应用上架到商店或者使用TestFlight进行测试，你最需要加入苹果开发者计划或者加入一个已经购买了开发者计划的组织。
 
-购买开发者计划，请前往 [Apple Developer Program Enrollment](https://developer.apple.com/programs/enroll//)，按照指示操作。
+购买开发者计划，请前往 [Apple Developer Program Enrollment](https://developer.apple.com/programs/enroll//) ，按照指示操作。
 
 ---
 
@@ -106,3 +106,52 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 <img src="./1.4.png" alt="图1.4" title="图1.4" width="700"/>
 
 6. 如果你没有Apple ID，点击对话框左下角的"Create Apple ID"按钮，创建Apple ID后，重复以上步骤。
+
+## 验证你的账户
+
+如果你购买了开发者计划，Xcode会代表你使用你的Apple ID凭证登录你的开发者账户和iTunes Connect， 偶尔你需要登录你的开发者账户和iTunes Connect执行任务，在此之前，请确认Xcode和你本人能正常使用相关工具。
+
+### 验证你的Xcode账户凭证
+
+在Xcode中验证你能在Preferences > Accounts中找到你的Apple ID并可以查询到账户详细内容。
+
+1. 如果有需要，选择 Xcode > Preferences，然后在顶部点击"Accounts"
+
+    你选中的那个Apple ID所属组织展示到你的眼前，在Name那一列写着组织名称，如果该组织加入了开发者计划，那么你的角色将出现在iOS或者Mac列，否则，“Free”出现在平台列。
+
+    没有购买开发者计划的个人，现在可以真机调试和使用某些苹果提供的核心功能服务（详情参见 **App Distribution Guide（app开发上架指南）** 中的 _**Supported Capabilities（功能支持表）**_)），但是他们不能发布iOS、tvOS、watchOS等应用给消费者。
+
+<img src="./1.5.png" alt="图1.5" title="图1.5" width="700"/>
+
+2. 选择你想查看的team，然后点击“View Details”
+
+    在弹出的对话框中，查看签名证书和配置文件，如果是你第一次对app进行签名，表格中不会有签名证书或者配置文件，替代的是在证书的每一行的”action“列出现”Create“按钮
+
+<img src="./1.6.png" alt="图1.6" title="图1.6" width="700"/>
+
+3.点击”Done“关闭对话框
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
