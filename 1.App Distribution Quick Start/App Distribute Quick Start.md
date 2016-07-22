@@ -8,7 +8,7 @@
 
 主要是为了让你快速上手**代码签名和配置文件，将一个app运行到设备上，最终上架到App Store、Apple TV App store或者Mac App Store**。当你通过Xcode对app做早期的测试、真机运行、添加了特定应用服务，如：iCloud storage（云存储），Game Center（游戏中心），In-App Purchase（内购）等，你的app必须是配置好了并代码签名了的
 
-    <img src="./1.0.png" alt="图1.0" title="图1.0" width="700"/>
+<img src="./1.0.png" alt="图1.0" title="图1.0" width="700"/>
 
 本文教你在开发时通用的Xcode工作流程，你将会学到如何在Xcode中添加Apple ID、在Xcode中创建证书并配置对应文件、验证访问你的开发者账户、真机调试、给app添加功能配置对应证书文件。你还将学到经验技巧，例如备份你的签名身份。
 
