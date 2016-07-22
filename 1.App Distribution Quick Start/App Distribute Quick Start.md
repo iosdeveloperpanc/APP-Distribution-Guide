@@ -47,6 +47,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 3. 在你想要创建的平台选项下选择“Application”,从对应的模板列表中选择一个，然后点击“Next”
 
     例如，创建一个iOS空窗口应用，选择“Single View Application”，如果要创建Mac应用，选择“OS X”的“Cocoa Application”
+
 <img src="./1.1.png" alt="图1.1" title="图1.1" width="700"/>
 
 4. 在出现的对话框中，填写Product Name和Company Identifier。
@@ -61,6 +62,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 7. 为工程文件的保存指定一个位置，可以选择取消选中“Create git repository on”，然后点击“Create”
     对于iOS应用，一个新的窗口出现了，类似于下图：
+
 <img src="./1.2.png" alt="图1.2" title="图1.2" width="700"/>
 
 ## 购买开发者计划
