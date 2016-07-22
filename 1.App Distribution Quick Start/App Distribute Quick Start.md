@@ -195,13 +195,49 @@ bundle ID是一个独一无二的标识，保存在你应用的沙盒里，Xcode
 
 ## 设置Bundle ID
 
-应用一旦在商店上架后，
+应用一旦在商店上架后，它的bundle ID是不能再更改的。所以现在检查确认，若有需要现在改正，如果你现在还没有购买开发者计划，你可以等以后再执行这一操作。
 
+应用商店和应用服务使用bundle ID去确保应用是独一无二的。bundle ID应该按照DNS反向命名，创建新工程的时候，Xcode会默认连接公司标识和工程名称-例如，Xcode连接 `com.example.ajohnson` 和   `MyFirstApp` 创建一个名为 `com.example.ajohnson.MyFirstApp` 的Bundle ID，不同于域名，bundle ID是区分大小写的，你可能更愿意使用小写命名bundle ID或者用不同的前缀。
 
+若要改变bundle ID，改掉它的公司前缀标识符，另外，在 `info.plist` 或项目编辑器窗口修改整个项目的bundle ID，而后，你得在iTunes Connect中输入同样的bundle ID。
 
+**在Xcode中修改bundle ID前缀**
 
+1. 显示项目导航器（顶部导航条），选择 View > Navigators > Show Project Navigator.
 
+2. 从 Project/Targets 一栏的弹出视图中，选中第二行
 
+3. 点击 General ，如果有需要的话，继续点击左侧的三角箭头
+
+4. 在bundle ID的编辑区域，重写bundle ID的前缀
+
+<img src="./1.13.png" alt="图1.13" title="图1.13" width="700"/>
+
+### 关联app到一个团队
+
+你可以用同一个Apple ID加入多个开发者团队-例如你可以购买个人开发者计划之后又加入到另外一个团队。因此,Xcode项目需要分配给一个特定的团队，这样Xcode知道创建代码签名和配置文件。如果你不属于苹果开发者计划,你会自动识别为个人团队的一员。
+
+**关联Xcode工程项目到一个团队**
+
+1. 在项目面板上，查看 identity 的设置
+
+    如果有需要，选中 target ，点击 General， 点击左侧的三角形详情箭头找到设置信息
+
+2. 对于Mac应用，选中 signing identify
+
+    如果你想提交应用到Mac store，就选中 Mac App Store。如果你想发布但是不在Mac Store上架或者你不是开发者，选中Developer ID 或者 Apple ID。
+
+<img src="./1.14.png" alt="图1.14" title="图1.14" width="700"/>
+
+3. 从弹出视图菜单中选择一个团队
+
+    如果你是个人开发者，选择你的名字，如果你不属于开发者，选择你个人团队。
+
+<img src="./1.15.png" alt="图1.15" title="图1.15" width="700"/>
+
+如果你已经连接了一个设备或者以前注册了一个设备，Xcode可能视图创建一个团队配置文件。在Team处弹出视图下方的警告消息可能会改变，在下一章你将学会处理各种问题。
+
+### 创建团队配置文件
 
 
 
