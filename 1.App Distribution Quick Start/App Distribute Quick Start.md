@@ -2,7 +2,7 @@
 
 翻译，GO~知识是人类进步的阶梯
 
->本文适用于刚准备学iOS开发的小白
+>本文适用于正在自学iOS开发的小白
 
 ## 关于本文
 
@@ -46,7 +46,9 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 3. 在你想要创建的平台选项下选择“Application”,从对应的模板列表中选择一个，然后点击“Next”
 
-    例如，创建一个iOS空窗口应用，选择“Single View Application”，创建Mac应用选择“OS X”的“Cocoa Application”<img src="./1.1.png" alt="图1.1" title="图1.1" width="700"/>
+例如，创建一个iOS空窗口应用，选择“Single View Application”，创建Mac应用选择“OS X”的“Cocoa Application”
+
+<img src="./1.1.png" alt="图1.1" title="图1.1" width="700"/>
 
 4. 在出现的对话框中，填写Product Name和Company Identifier。
 
@@ -101,7 +103,7 @@ Company Identifier应该以反向DNS格式来填写，如果你没有公司标�
 
 5.在对话框中输入Apple ID和密码，点击"Sign In"
 
-    在OS X 10.11以后，如果你开启了两步验证Apple ID，你可能需要输入额外的验证码（点击 [Frequently asked questions about two-step verification for Apple ID](https://support.apple.com/en-us/HT204152) 了解更多）,在早期的系统环境下，你可能需要输入一个应用特定的密码（点击 [Using app-specific passwords](https://support.apple.com/en-us/HT204397) 学习如何生成一个app特定的密码）。
+在OS X 10.11以后，如果你开启了两步验证Apple ID，你可能需要输入额外的验证码（点击 [Frequently asked questions about two-step verification for Apple ID](https://support.apple.com/en-us/HT204152) 了解更多）,在早期的系统环境下，你可能需要输入一个应用特定的密码（点击 [Using app-specific passwords](https://support.apple.com/en-us/HT204397) 学习如何生成一个app特定的密码）。
 
 <img src="./1.4.png" alt="图1.4" title="图1.4" width="700"/>
 
@@ -117,13 +119,14 @@ Company Identifier应该以反向DNS格式来填写，如果你没有公司标�
 
 1. 如果有需要，选择 Xcode > Preferences，然后在顶部点击"Accounts"
 
-    你选中的那个Apple ID所属组织展示到你的眼前，在Name那一列写着组织名称，如果该组织加入了开发者计划，那么你的角色将出现在iOS或者Mac列，否则，“Free”出现在平台列。
+你选中的那个Apple ID所属组织展示到你的眼前，在Name那一列写着组织名称，如果该组织加入了开发者计划，那么你的角色将出现在iOS或者Mac列，否则，“Free”出现在平台列。
 
-    没有购买开发者计划的个人，现在可以真机调试和使用某些苹果提供的核心功能服务（详情参见 **App Distribution Guide（app开发上架指南）** 中的 _**Supported Capabilities（功能支持表）**_），但是他们不能发布iOS、tvOS、watchOS等应用给消费者。<img src="./1.5.png" alt="图1.5" title="图1.5" width="700"/>
+没有购买开发者计划的个人，现在可以真机调试和使用某些苹果提供的核心功能服务（详情参见 **App Distribution Guide（app开发上架指南）** 中的 _**Supported Capabilities（功能支持表）**_），但是他们不能发布iOS、tvOS、watchOS等应用给消费者。<img src="./1.5.png" alt="图1.5" title="图1.5" width="700"/>
 
 2. 选择你想查看的team，然后点击“View Details”按钮
 
-    在弹出的对话框中，查看签名证书和配置文件，如果是你第一次对app进行签名，表格中不会有签名证书或者配置文件，替代的是在证书的每一行的”Action“列出现”Create“按钮
+在弹出的对话框中，查看签名证书和配置文件，如果是你第一次对app进行签名，表格中不会有签名证书或者配置文件，替代的是在证书的每一行的”Action“列出现”Create“按钮
+
 <img src="./1.6.png" alt="图1.6" title="图1.6" width="700"/>
 
 3.点击”Done“关闭对话框
@@ -154,11 +157,72 @@ Company Identifier应该以反向DNS格式来填写，如果你没有公司标�
 
 1. 登录 [developer.apple.com/account](https://developer.apple.com/account)，然后在左侧点击”iTunes Connect“
 
-2. 选中”Take me straight to iTunes Connect...“ and click Go to iTunes Connect。<img src="./1.9.png" alt="图1.9" title="图1.9" width="700"/>iTunes Connect主页上展示了我的应用，用户和角色，还有其它模块。<img src="./1.10.png" alt="图1.10" title="图1.10" width="700"/>然后，你将可以在iTunes Connect中的 My Apps 这一栏输入应用的相关信息。
+2. 选中”Take me straight to iTunes Connect...“ and click Go to iTunes Connect。
+
+<img src="./1.9.png" alt="图1.9" title="图1.9" width="700"/>
+
+iTunes Connect主页上展示了我的应用，用户和角色，还有其它模块。
+
+<img src="./1.10.png" alt="图1.10" title="图1.10" width="700"/>
+
+然后，你将可以在iTunes Connect中的 My Apps 这一栏输入应用的相关信息。
 
 3. 在右上角，你可以从弹出视图中选择”Sign Out“，退出
 
 另外，登录到 [itunesconnect.apple.com](https://itunesconnect.apple.com)，更多了解iTunes Connect请阅读iTunes Connect Developer Guide（iTunes Connect开发指南）。
+
+### 小结
+
+在本章中，你学会了如何在Xcode中添加Apple ID，以及购买开发者计划的途径。同时你也学会了怎么样登录开发者账号和iTunes Connect，在下一章，你将学会如何创建签名证书和配置文件（Signing identity 和 provisioning profile）。
+
+## 创建你的团队配置文件
+
+如果你输入关于你app的信息、分配了一个团队去开发app，Xcode会为你创建必要的签名证书和配置文件。特别是，Xcode创建一个团队配置文件使你的app能在你所有的设备上运行，并且可以是用苹果提供的功能服务。对于iOS 和 tvOS应用，要想调试就要将设备连接到Mac，对于watchOS应用，连接到一个iPhone和一个Apple Watch是标配。
+
+Provisioning 是准备、配置app、运行在设备上、使用苹果功能服务的过程，在开发阶段，你可以选择支持哪些设备可以运行你的应用，你的应用支持苹果提供的哪些功能。A Provisioning Profile 可以从你的开发者账号下载并导入到app的沙盒包中，并且使得整个包都被签名了。而导入到app的Provisioning Profile在应用运行到设备上之前，会安装到设备上。如果该文件不满足一定条件，应用将不会运行起来。你可以通过Xcode中的选项配置开发使用provisioning profile。
+
+为了节省你的时间，Xcode为你创建并管理了一系列开发配置证书，被称为”a team provisioning profile“（团队配置证书）。该证书允许你的应用被你所有团队成员运行在你们所有的设备上。对于个人开发者，该证书可以使你的应用运行你的所有设备上。Xcode还提供了你为集成对应功能时按需生成对应配置证书的步骤，尽管Xcode简化了这些过程，但是依旧可以帮助你理解你的代码签名和配置文件，以及知晓他们保存在哪儿。
+
+Xcode根据需要创建配置文件，这是你的开发者账户完整的需要。如果开发者证书丢失了，Xcode会帮你请求一个，开发者证书会在团队配置文件中用来验证你的身份，一个设备必须注册并创建一个配置文件，这样Xcode才可以允许你连接iOS或者tvOS设备，对于Mac应用，Xcode会在运行时自动注册当前mac设备。
+
+<img src="./1.11.png" alt="图1.11" title="图1.11" width="700"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
