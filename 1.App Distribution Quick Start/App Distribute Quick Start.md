@@ -50,13 +50,13 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 4. 在出现的对话框中，填写Product Name和Company Identifier。
 
-    Company Identifier应该以反向DNS格式来填写，如果你没有公司标识，就填写 `com.example.你的名字` ，等以后有了，再更改掉。d对话框中其它的内容需要现在就完成，下面的截图展示了创建iOS应用的填写，对于tvOS、watch OS和Mac应用，选项大同小异。
+Company Identifier应该以反向DNS格式来填写，如果你没有公司标识，就填写 `com.example.你的名字` ，等以后有了，再更改掉。d对话框中其它的内容需要现在就完成，下面的截图展示了创建iOS应用的填写，对于tvOS、watch OS和Mac应用，选项大同小异。
 
 5. 在Language弹出框中选择一个编程语言
 
 6. 点击“Next”
 
-    会有一个对话框让你选择在哪儿保存当前的工程文件
+会有一个对话框让你选择在哪儿保存当前的工程文件
 
 7. 为工程文件的保存指定一个位置，可以选择取消选中“Create git repository on”，然后点击“Create”
     对于iOS应用，一个新的窗口出现了，类似于下图：
@@ -119,14 +119,11 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
     你选中的那个Apple ID所属组织展示到你的眼前，在Name那一列写着组织名称，如果该组织加入了开发者计划，那么你的角色将出现在iOS或者Mac列，否则，“Free”出现在平台列。
 
-    没有购买开发者计划的个人，现在可以真机调试和使用某些苹果提供的核心功能服务（详情参见 **App Distribution Guide（app开发上架指南）** 中的 _**Supported Capabilities（功能支持表）**_)），但是他们不能发布iOS、tvOS、watchOS等应用给消费者。
+    没有购买开发者计划的个人，现在可以真机调试和使用某些苹果提供的核心功能服务（详情参见 **App Distribution Guide（app开发上架指南）** 中的 _**Supported Capabilities（功能支持表）**_），但是他们不能发布iOS、tvOS、watchOS等应用给消费者。<img src="./1.5.png" alt="图1.5" title="图1.5" width="700"/>
 
-<img src="./1.5.png" alt="图1.5" title="图1.5" width="700"/>
+2. 选择你想查看的team，然后点击“View Details”按钮
 
-2. 选择你想查看的team，然后点击“View Details”
-
-    在弹出的对话框中，查看签名证书和配置文件，如果是你第一次对app进行签名，表格中不会有签名证书或者配置文件，替代的是在证书的每一行的”action“列出现”Create“按钮
-
+    在弹出的对话框中，查看签名证书和配置文件，如果是你第一次对app进行签名，表格中不会有签名证书或者配置文件，替代的是在证书的每一行的”Action“列出现”Create“按钮
 <img src="./1.6.png" alt="图1.6" title="图1.6" width="700"/>
 
 3.点击”Done“关闭对话框
@@ -139,7 +136,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 2. 再出现的对话框中，输入你的Apple ID和密码，点击”Sign In“
 
-3.点击”Certificates，Identifiers & Profiles“
+3. 点击”Certificates，Identifiers & Profiles“
 
 <img src="./1.7.png" alt="图1.7" title="图1.7" width="700"/>
 
@@ -157,15 +154,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 1. 登录 [developer.apple.com/account](https://developer.apple.com/account)，然后在左侧点击”iTunes Connect“
 
-2. 选中”Take me straight to iTunes Connect...“ and click Go to iTunes Connect。
-
-<img src="./1.9.png" alt="图1.9" title="图1.9" width="700"/>
-
-    iTunes Connect主页上展示了我的应用，用户和角色，还有其它模块。
-
-<img src="./1.10.png" alt="图1.10" title="图1.10" width="700"/>
-
-    然后，你将可以在iTunes Connect中的 My Apps 这一栏输入应用的相关信息。
+2. 选中”Take me straight to iTunes Connect...“ and click Go to iTunes Connect。<img src="./1.9.png" alt="图1.9" title="图1.9" width="700"/>iTunes Connect主页上展示了我的应用，用户和角色，还有其它模块。<img src="./1.10.png" alt="图1.10" title="图1.10" width="700"/>然后，你将可以在iTunes Connect中的 My Apps 这一栏输入应用的相关信息。
 
 3. 在右上角，你可以从弹出视图中选择”Sign Out“，退出
 
