@@ -77,5 +77,27 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 ### 关于开发者计划
 
+苹果开发者计划给你发布应用提供了一切需要的东西，你购买该计划，就可以提交iOS应用、watchOS应用到App Store，Mac应用到Mac App Store，tvOS应用到Apple TV App store。当然，你还可以不通过Mac App Store发布你的Mac应用，你还可以在对应的平台上，给应用添加苹果特殊的功能服务，另外，你还可以使用更多的工具，用你的开发账号和iTunes Connect管理机构和应用的元数据。
+
+你用属于你的特别且唯一的Apple ID，购买企业开发者计划，你可以创建一个以你为主的组织团队，当然，你也可以购买个人或者公司级别（也就是被看做一个人的团队）的开发者计划。谁创建了团队谁就是团队的总代理，是合法的成员管理者，有所有权去管理开发账 [developer.apple.com/account](https://developer.apple.com/account) 和操作iTunes Connect。
+
+用企业开发者计划账号可以添加他人分配角色及定义个人的特权，一个团队管理员角色几乎拥有组织团队总代理的所有权限。比如说，管理员角色可以管理整个团队而不需要任何批准，团队成员在得到团队总代理或者管理的允许后可以真机调试和给应用添加核心功能服务。
+
+购买开发者计划，请前往 [Apple Developer Program Enrollment](https://developer.apple.com/programs/enroll//)，按照指示操作。
+
+### 在Xcode中添加关联Apple ID
+
+**在开始证书配置之前，先向Xcode中添加你的Apple ID**
+
+1. 选中顶部的 Xcode > Preferences.
+
+2. 在弹出窗口的顶部点击"Accounts"
+
+3. 在左下角点击“+”按钮
+
+4. 在弹出视图中选择"Add Apple ID"
+
+<img src="./1.3.png" alt="图1.3" title="图1.3" width="700"/>
+
 
 
