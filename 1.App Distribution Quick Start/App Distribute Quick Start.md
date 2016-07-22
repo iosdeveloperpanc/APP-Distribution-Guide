@@ -99,5 +99,10 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 <img src="./1.3.png" alt="图1.3" title="图1.3" width="700"/>
 
+5.在对话框中输入Apple ID和密码，点击"Sign In"
 
+    在OS X 10.11以后，如果你开启了两步验证Apple ID，你可能需要输入额外的验证码（点击 [Frequently asked questions about two-step verification for Apple ID](https://support.apple.com/en-us/HT204152) 了解更多）,在早期的系统环境下，你可能需要输入一个应用特定的密码（点击 [Using app-specific passwords](https://support.apple.com/en-us/HT204397) 学习如何生成一个app特定的密码）。
 
+<img src="./1.4.png" alt="图1.4" title="图1.4" width="700"/>
+
+6. 如果你没有Apple ID，点击对话框左下角的"Create Apple ID"按钮，创建Apple ID后，重复以上步骤。
