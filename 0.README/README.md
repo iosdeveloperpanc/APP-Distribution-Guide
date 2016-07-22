@@ -6,9 +6,15 @@
 
 ### 翻译文件来源
 iOS Documentation and API Reference
+
 Xcode -> IDEs -> Guides -> App Distribution Quick Start | App Distribution Guide
 <img src="./0.0.png" alt="图0.0" title="图0.0" width="700"/>
 <img src="./0.1.png" alt="图0.1" title="图0.1" width="700"/>
 
 ### Xcode、SDK版本
-Xcode 7.3 iOS 9.3
+Xcode 7.3 | iOS 9.3
+
+### 阅读提示
+请先阅读 App Distribution Quick Start 
+
+再阅读 App Distribution Guide
