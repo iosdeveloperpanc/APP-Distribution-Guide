@@ -48,4 +48,6 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 <img src="./1.1.png" alt="图1.1" title="图1.1" width="700"/>
 
     4. 在出现的对话框中，填写Product Name和Company Identifier。
-        
+
+        Company Identifier应该以反向DNS格式来填写，如果你没有公司标识，就填写`com.example.你的名字`，等以后有了，再更改掉。
+
