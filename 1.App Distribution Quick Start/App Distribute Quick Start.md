@@ -46,11 +46,22 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 3. 在你想要创建的平台选项下选择“Application”,从对应的模板列表中选择一个，然后点击“Next”
 
-        例如，创建一个iOS空窗口应用，选择“Single View Application”，如果要创建Mac应用，选择“OS X”的“Cocoa Application”
-
+    例如，创建一个iOS空窗口应用，选择“Single View Application”，如果要创建Mac应用，选择“OS X”的“Cocoa Application”
 <img src="./1.1.png" alt="图1.1" title="图1.1" width="700"/>
 
 4. 在出现的对话框中，填写Product Name和Company Identifier。
 
-        Company Identifier应该以反向DNS格式来填写，如果你没有公司标识，就填写`com.example.你的名字`，等以后有了，再更改掉。d对话框中其它的内容需要现在就完成，下面的截图展示了创建iOS应用的填写，对于tvOS、watch OS和Mac应用，选项大同小异。
+    Company Identifier应该以反向DNS格式来填写，如果你没有公司标识，就填写 `com.example.你的名字` ，等以后有了，再更改掉。d对话框中其它的内容需要现在就完成，下面的截图展示了创建iOS应用的填写，对于tvOS、watch OS和Mac应用，选项大同小异。
+5. 在Language弹出框中选择一个编程语言
+6. 点击“Next”
 
+    会有一个对话框让你选择在哪儿保存当前的工程文件
+7. 为工程文件的保存指定一个位置，可以选择取消选中“Create git repository on”，然后点击“Create”
+    对于iOS应用，一个新的窗口出现了，类似于下图：
+<img src="./1.2.png" alt="图1.2" title="图1.2" width="700"/>
+
+## 购买开发者计划
+
+如果你将发布应用上架到商店或者使用TestFlight进行测试，你最需要加入苹果开发者计划或者加入一个已经购买了开发者计划的组织。
+
+购买开发者计划，请前往 [Apple Developer Program Enrollment](https://developer.apple.com/programs/enroll//)，按照指示操作。
