@@ -53,10 +53,13 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 4. 在出现的对话框中，填写Product Name和Company Identifier。
 
     Company Identifier应该以反向DNS格式来填写，如果你没有公司标识，就填写 `com.example.你的名字` ，等以后有了，再更改掉。d对话框中其它的内容需要现在就完成，下面的截图展示了创建iOS应用的填写，对于tvOS、watch OS和Mac应用，选项大同小异。
+
 5. 在Language弹出框中选择一个编程语言
+
 6. 点击“Next”
 
     会有一个对话框让你选择在哪儿保存当前的工程文件
+
 7. 为工程文件的保存指定一个位置，可以选择取消选中“Create git repository on”，然后点击“Create”
     对于iOS应用，一个新的窗口出现了，类似于下图：
 
