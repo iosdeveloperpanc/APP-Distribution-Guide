@@ -122,6 +122,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
     你选中的那个Apple ID所属组织展示到你的眼前，在Name那一列写着组织名称，如果该组织加入了开发者计划，那么你的角色将出现在iOS或者Mac列，否则，“Free”出现在平台列。
 
     没有购买开发者计划的个人，现在可以真机调试和使用某些苹果提供的核心功能服务（详情参见 **App Distribution Guide（app开发上架指南）** 中的 _**Supported Capabilities（功能支持表）**_），但是他们不能发布iOS、tvOS、watchOS等应用给消费者。
+
     <img src="./1.5.png" alt="图1.5" title="图1.5" width="700"/>
 
 2. 选择你想查看的team，然后点击“View Details”按钮
@@ -164,7 +165,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
     iTunes Connect主页上展示了我的应用，用户和角色，还有其它模块。
 
-    <img src="./1.10.png" alt="图1.10" title="图1.10" width="500"/>
+    <img src="./1.10.png" alt="图1.10" title="图1.10" width="600"/>
 
     然后，你将可以在iTunes Connect中的 My Apps 这一栏输入应用的相关信息。
 
@@ -186,13 +187,13 @@ Provisioning 是准备、配置app、运行在设备上、使用苹果功能服�
 
 Xcode根据需要创建配置文件，这是你的开发者账户完整的需要。如果开发者证书丢失了，Xcode会帮你请求一个，开发者证书会在团队配置文件中用来验证你的身份，一个设备必须注册并创建一个配置文件，这样Xcode才可以允许你连接iOS或者tvOS设备，对于Mac应用，Xcode会在运行时自动注册当前mac设备。
 
-    <img src="./1.11.png" alt="图1.11" title="图1.11" width="700"/>
+<img src="./1.11.png" alt="图1.11" title="图1.11" width="700"/>
 
 bundle ID是一个独一无二的标识，保存在你应用的沙盒里，Xcode创建一个与之相匹配的App ID，一个App ID用来标识你的一个或者多个应用，App ID会与应用的bundle ID进行比较来判定它是否匹配。App ID可以是一个显式的App ID，也可以是一个通配的App ID，同时和多个应用相匹配。Xcode在有需要的情况下会创建一个通配的ID和一个显式的ID。例如，如果你启用苹果应用程序服务，需要一个显式ID，那么Xcode会创建一个显式ID和一个新的团队配置文件。因此，在你的开发者账户中，你可能拥有一个被所有应用共用的团队配置文件和多个具体用途的配置文件。Xcode会为iOS、tvOS和Mac等应用分开创建团队配置文件。
 
 你使用一个签名证书去给应用代码签名。当Xcode请求你的开发者证书时，证书和它的公钥保存在你的开发者账户中，而签名的证书和公钥及私钥保存在你的keyChain中，没有私钥你就无法完成代码签名。
 
-    <img src="./1.12.png" alt="图1.12" title="图1.12" width="700"/>
+<img src="./1.12.png" alt="图1.12" title="图1.12" width="700"/>
 
 ## 设置Bundle ID
 
