@@ -39,15 +39,18 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 如果你没有现成的可运行无误的Xcode工程项目，你可以创建一个简单的应用用来在本文中学习代码签名和配置应用
 
 创建应用步骤
-    1. 打开Xcode
-    2. 选择File > New > Project,或者在“Welcome to Xcode”面板中点击“Create a new Xcode project”
-    3. 在你想要创建的平台选项下选择“Application”,从对应的模板列表中选择一个，然后点击“Next”
+
+1. 打开Xcode
+
+2. 选择File > New > Project,或者在“Welcome to Xcode”面板中点击“Create a new Xcode project”
+
+3. 在你想要创建的平台选项下选择“Application”,从对应的模板列表中选择一个，然后点击“Next”
 
         例如，创建一个iOS空窗口应用，选择“Single View Application”，如果要创建Mac应用，选择“OS X”的“Cocoa Application”
 
 <img src="./1.1.png" alt="图1.1" title="图1.1" width="700"/>
 
-    4. 在出现的对话框中，填写Product Name和Company Identifier。
+4. 在出现的对话框中，填写Product Name和Company Identifier。
 
-        Company Identifier应该以反向DNS格式来填写，如果你没有公司标识，就填写`com.example.你的名字`，等以后有了，再更改掉。
+        Company Identifier应该以反向DNS格式来填写，如果你没有公司标识，就填写`com.example.你的名字`，等以后有了，再更改掉。d对话框中其它的内容需要现在就完成，下面的截图展示了创建iOS应用的填写，对于tvOS、watch OS和Mac应用，选项大同小异。
 
