@@ -8,7 +8,7 @@
 
 主要是为了让你快速上手**代码签名和配置文件，将一个app运行到设备上，最终上架到App Store、Apple TV App store或者Mac App Store**。当你通过Xcode对app做早期的测试、真机运行、添加了特定应用服务，如：iCloud storage（云存储），Game Center（游戏中心），In-App Purchase（内购）等，你的app必须是配置好了并代码签名了的
 
-<img src="./1.0.png" alt="图1.0" title="图1.0" width="700"/>
+    <img src="./1.0.png" alt="图1.0" title="图1.0" width="700"/>
 
 本文教你在开发时通用的Xcode工作流程，你将会学到如何在Xcode中添加Apple ID、在Xcode中创建证书并配置对应文件、验证访问你的开发者账户、真机调试、给app添加功能配置对应证书文件。你还将学到经验技巧，例如备份你的签名身份。
 
@@ -186,7 +186,7 @@ Provisioning 是准备、配置app、运行在设备上、使用苹果功能服�
 
 Xcode根据需要创建配置文件，这是你的开发者账户完整的需要。如果开发者证书丢失了，Xcode会帮你请求一个，开发者证书会在团队配置文件中用来验证你的身份，一个设备必须注册并创建一个配置文件，这样Xcode才可以允许你连接iOS或者tvOS设备，对于Mac应用，Xcode会在运行时自动注册当前mac设备。
 
-<img src="./1.11.png" alt="图1.11" title="图1.11" width="700"/>
+    <img src="./1.11.png" alt="图1.11" title="图1.11" width="700"/>
 
 bundle ID是一个独一无二的标识，保存在你应用的沙盒里，Xcode创建一个与之相匹配的App ID，一个App ID用来标识你的一个或者多个应用，App ID会与应用的bundle ID进行比较来判定它是否匹配。App ID可以是一个显式的App ID，也可以是一个通配的App ID，同时和多个应用相匹配。Xcode在有需要的情况下会创建一个通配的ID和一个显式的ID。例如，如果你启用苹果应用程序服务，需要一个显式ID，那么Xcode会创建一个显式ID和一个新的团队配置文件。因此，在你的开发者账户中，你可能拥有一个被所有应用共用的团队配置文件和多个具体用途的配置文件。Xcode会为iOS、tvOS和Mac等应用分开创建团队配置文件。
 
@@ -228,13 +228,13 @@ bundle ID是一个独一无二的标识，保存在你应用的沙盒里，Xcode
 
     如果你想提交应用到Mac store，就选中 Mac App Store。如果你想发布但是不在Mac Store上架或者你不是开发者，选中Developer ID 或者 Apple ID。
 
-<img src="./1.14.png" alt="图1.14" title="图1.14" width="700"/>
+    <img src="./1.14.png" alt="图1.14" title="图1.14" width="700"/>
 
 3. 从弹出视图菜单中选择一个团队
 
     如果你是个人开发者，选择你的名字，如果你不属于开发者，选择你个人团队。
 
-<img src="./1.15.png" alt="图1.15" title="图1.15" width="700"/>
+    <img src="./1.15.png" alt="图1.15" title="图1.15" width="700"/>
 
 如果你已经连接了一个设备或者以前注册了一个设备，Xcode可能视图创建一个团队配置文件。在Team处弹出视图下方的警告消息可能会改变，在下一章你将学会处理各种问题。
 
