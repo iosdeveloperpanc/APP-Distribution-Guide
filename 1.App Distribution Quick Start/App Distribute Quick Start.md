@@ -46,7 +46,7 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 
 3. 在你想要创建的平台选项下选择“Application”,从对应的模板列表中选择一个，然后点击“Next”
 
-    例如，创建一个iOS空窗口应用，选择“Single View Application”，如果要创建Mac应用，选择“OS X”的“Cocoa Application”
+    例如，创建一个iOS空窗口应用，选择“Single View Application”，创建Mac应用选择“OS X”的“Cocoa Application”
 
 <img src="./1.1.png" alt="图1.1" title="图1.1" width="700"/>
 
@@ -70,3 +70,5 @@ Xcode是苹果集成的开发工具（IDE），是你开发应用的主要工具
 如果你将发布应用上架到商店或者使用TestFlight进行测试，你最需要加入苹果开发者计划或者加入一个已经购买了开发者计划的组织。
 
 购买开发者计划，请前往 [Apple Developer Program Enrollment](https://developer.apple.com/programs/enroll//)，按照指示操作。
+
+
