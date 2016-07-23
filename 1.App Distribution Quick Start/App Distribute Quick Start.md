@@ -197,7 +197,7 @@ bundle ID是一个独一无二的标识，保存在你应用的沙盒里，Xcode
 
 <img src="./1.12.png" alt="图1.12" title="图1.12" width="700"/>
 
-## 设置Bundle ID
+### 设置Bundle ID
 
 应用一旦在商店上架后，它的bundle ID是不能再更改的。所以现在检查确认，若有需要现在改正，如果你现在还没有购买开发者计划，你可以等以后再执行这一操作。
 
@@ -295,7 +295,115 @@ Xcode替代你进行了很多步骤创建团队配置文件，节省了你不少
 
 ---
 
+## 真机调试
 
+所有使用苹果应用服务的应用必须配置文件和代码签名后才能真机运行，在之前的章节中你创建团队配置文件时，Xcode完成代码签名和按配置文件构建设置，现在当你按下“run”按钮，Xcode运行你的应用，将团队配置文件嵌入到bundle中，然后完成代码签名。应用可以运行在包含在团队配置文件中的真机设备（ipad、iphone、ipod）。
+
+### 关于设备
+
+device ID是一个iOS、tvOS、watchOS或者Mac设备的独一无二的标识，你的团队每个产品每年可以注册100个设备用于开发和调试，对于iOS应用，你可以注册100个iPad、100iPhone、100个iPod。Xcode自动将你添加的所有设备添加到团队配置文件中。
+
+### 真机运行你的App
+
+如果你已经像**《创建团队配置文件》**一节中描述的那样创建了团队配置文件，那么只需要几步就可以完成运行你的iOS、tvOS或者watchOS应用到真机设备上。对于Mac应用，只用一次点击就可以运行。
+
+### 真机运行你的iOS、tvOS、watchOS App
+
+你可以使用之前创建配置文件的真机设备，也可以用其他的真机设备，只要它符合应用支持的部署目标。
+
+**在一个已连接的真机设备上运行你的应用**
+
+1. 将设备连接到Mac
+
+    对于watchOS应用，连接一台iPhone和一台Apple Watch是标配，Xcode将注册该iPhone和Apple Watch。
+
+2. 在项目导航栏，选择你的目标工程
+
+    <img src="./1.19.png" alt="图1.19" title="图1.19" width="700"/>
+
+    如果你的设备连接后，不能用，在继续之前先处掉这个问题。例如，如果设备与项目部署的目标不一致，可以升级设备的系统版本，另外也可以降低Xcode上该项目的部署支持目标系统版本。
+
+3. 点击“Run”按钮
+
+    在启动之前，Xcode会先将app安装到设备上
+
+4. 如果出现“No matching provisioning profile found”报错，点击“Fix Issue”按钮
+
+    如果你连接的设备不在团队配置文件中，Xcode需要在运行到真机之前将它添加进去。
+
+## 验证你的文件
+
+为了更好的理解Xcode如何管理你的团队配置文件，现在我们比较Xcode、你的开发者账号、中代码签名、钥匙链中的代码签名和团队配置文件。
+
+### 在Xcode中验证签名证书和配置文件
+
+在Xcode的钥匙链中，展示了签名证书和从开发者账号下载的多个配置文件，在你真机调试之后，你的开发证书和团队配置文件应该出现在Xcode中。
+
+**在Xcode中查看签名证书和配置文件**
+
+1. 选择 Xcode > Preferences
+
+2. 在顶部导航栏，选择 Accounts
+
+3. 选择你想查看的团队，点击“View Details”
+
+    在弹出的对话框中，你可以看到你的签名证书和配置文件。对于不需要的证书，在右侧的 Action 一列显示的是 create 按钮
+
+    <img src="./1.20.png" alt="图1.20" title="图1.20" width="700"/>
+
+4. 点击“Done” 关闭对话框
+
+### 在开发者账户中验证你的证书、标识、配置文件
+
+如果你加入了开发者计划，你就可以查看出存储在你开发者账户中内容资源，包括证书、标识（包含设备ID和App ID）、配置文件等
+
+**在开发者账户中查看证书**
+
+1. 在“Certificates，Identifier & Profiles”一栏中，选中 Certificates
+
+2. 在Certificates一组中，选中 “All” or “Development”
+
+    证书的名称、类型、失效日期和在Xcode中看到的是一致的。
+
+    <img src="./1.21.png" alt="图1.21" title="图1.21" width="700"/>
+
+##### 查看你的设备
+
+在开发过程中，你可以通过Xcode注册设备，偶尔需要查看一下团队所有的设备信息
+
+**查看你的设备**
+
+1. 在“Certificates，Identifier & Profiles”一栏中，选中 Devices
+
+2. 在Devices这一组，选择“All” 或者 “a device family”
+
+    在右侧，可以看到设备的名称和标识，可用的设备以黑色文本显示，不可能用的设备以灰色文本显示
+
+##### 查看App ID和团队配置文件
+
+首先，Xcode会替代你注册一个通配的App ID，同时创建相应的配置文件，可以供你所有的app使用。之后，当你配置应用服务的时候，Xcode将创建一个显式App ID来匹配你的bundle ID。
+
+**查看你的所有的通配App ID和团队配置文件**
+
+1. 在“Certificates，Identifier & Profiles”一栏中，选中 Identifiers
+
+2. 在“Identifiers”这一组，选择App IDs
+
+    Xcode注册的通配App ID被称为 XC Wildcard，Xcode注册的显式App ID以“XC”开头
+
+3. 选择“Provisioning Profiles”
+
+4. 在“Provisioning Profiles”这一组，选择“Development”
+
+    团队配置文件包含文本“Team Provisioning Profile”，在最前头会加上操作系统的名称，iOS和watchOS会共用通配的团队配置文件。
+
+5. 点击团队配置文件，查看详情
+
+    <img src="./1.22.png" alt="图1.22" title="图1.22" width="700"/>
+
+    验证发现配置文件包含的证书数、设备数和你之前查看的一致，如果你是个人独立开发者，在配置文件中证书的数量应该就是1，应该没有启动应用服务（除非你或者一个团队成员启用应用服务）
+
+##### 在钥匙链中查看签名证书
 
 
 
