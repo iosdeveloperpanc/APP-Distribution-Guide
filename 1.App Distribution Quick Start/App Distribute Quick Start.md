@@ -513,14 +513,53 @@ device ID是一个iOS、tvOS、watchOS或者Mac设备的独一无二的标识，
 
     <img src="./1.29.png" alt="图1.29" title="图1.29" width="700"/>
 
+### 在开发者账户中浏览配置文件
 
+如果你加入了开发者计划，你可以在你的开发者账户中查看到比Xcode中更多的详细信息。
 
+**警示：**如果你没有加入开发者计划，请跳过这个步骤。
 
+**在开发者账户中浏览配置文件**
 
+1. 在 Certificates，Identifiers & Profiles中，Provisioning Profiles下面，选择 All 或者 Development
 
+    如果你添加了需要显式ID的应用服务，那你可以看到多个 active 状态的团队配置文件。Xcode首先会使用包含显式App ID的团队配置文件去匹配应用的bundle ID，其次才会用包含通配App ID的团队配置文件。
 
+2. 在iOS Provisioning Profiles 或者 Mac Provisioning Profiles，选中想查看的团队配置文件。
 
+    在Enabled Services处展示了App ID的权利，这些权利是你在应用服务列表中向工程添加应用服务的集合。
 
+    <img src="./1.30.png" alt="图1.30" title="图1.30" width="700"/>
+
+    对于iOS应用，你可以开启需要显式App ID支持的应用服务，默认情况下，Game Center和In-App Purchase的开启权利默认添加到你的App ID中，不过，要想在app中使用这些服务，在Capabilities窗口中开启它们！
+
+### 验证App ID设置信息
+
+Xcode是向一个App ID添加权利（开启的应用服务权利），而不是向团队配置文件。所以找到这些信息处于开发者账户中的位置来验正App ID设置信息。
+
+**Note：** 如果你没有加入开发者计划，请跳过此步骤
+
+**验证App ID设置信息**
+
+1. 在Certificates，Identifiers & Profiles中，选中Identifiers，在Identifiers下面，选中App IDs
+
+2. 如果有与你bundle ID一致的显式App ID，选中它，否则选中通配App ID
+
+    在Application Services表格包含了你可以开启的应用服务白名单，Enable旁绿色圆点表示你可以使用对应的服务，Configurable旁黄色圆点表示对应的服务还没有完全配置好。
+
+    <img src="./1.31.png" alt="图1.31" title="图1.31" width="700"/>
+
+你还可以在开发者账户中编辑App ID的设置信息，但是你在开发者账户中所有做的任何改变都不会对Xcode中工程应用配置服务生效，请使用Xcode中的Capabilities开启应用服务并完整的配置好应用服务。
+
+### 小结
+
+在本章，你学习了如何开启只有提交到商店的app才能开启的应用服务，随着对开发者账户中团队配置文件和App ID的验证，你对配置文件如何运作有了一个深入的了解，你也学会了从哪里搜寻关于这些应用服务的信息。
+
+---
+
+## 接下来学什么
+
+下一步是学习完整配置和编码完成应用服务的开启与使用，
 
 
 
