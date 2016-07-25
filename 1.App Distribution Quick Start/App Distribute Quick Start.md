@@ -1,20 +1,20 @@
 #APP-Distribution-Quick-Start（快速上手app开发及上架）
 
-翻译，GO~知识是人类进步的阶梯
+翻译，go~知识是人类进步的阶梯
 
 >本文适用于正在自学iOS开发的小白
 
 ## 关于本文
 
-主要是为了让你快速上手**代码签名和配置文件，将一个app运行到设备上，最终上架到App Store、Apple TV App store或者Mac App Store**。当你通过Xcode对app做早期的测试、真机运行、添加了特定应用服务，如：iCloud storage（云存储），Game Center（游戏中心），In-App Purchase（内购）等，你的app必须是配置好了并代码签名了的
+本文是为了让你快速上手**签名和配置app并运行到设备上，最终上架到App Store**。即使你要通过Xcode做早期调试时，你的app必须是配置好并签过名的，而且默认会开启iCloud storage（云存储），Game Center（游戏中心），In-App Purchase（内购）应用服务。
 
 <img src="./1.0.png" alt="图1.0" title="图1.0" width="700"/>
 
-本文教你在开发时通用的Xcode工作流程，你将会学到如何在Xcode中添加Apple ID、在Xcode中创建证书并配置对应文件、验证访问你的开发者账户、真机调试、给app添加功能配置对应证书文件。你还将学到经验技巧，例如备份你的签名身份。
+本文教你在开发时Xcode工作常规流程，你将会学到如何向Xcode添加Apple ID、在Xcode中创建签名凭证和配置文件、访问开发者账户核查、真机调试、开启需要配置的应用服务。你将可以好好实践，例如备份你的签名身份。
 
 ### 另请参阅
 
-本文是App Distribution Guide（app开发上架指南）的前奏，App Distribution Guide一文全面覆盖了开发所有阶段和可选可配置的工作流程，例如发布你的Mac应用但是不上架到Mac App Store。阅读App Distribution Guide，你将全面掌握配置文件、发布应用、解决遇到的问题，当然你得继续阅读本文，遇到不懂的专业词汇，请参见术语表（附件）。
+本文是App Distribution Guide（app开发上架指南）的前奏，App Distribution Guide一文全面覆盖了开发所有阶段和替代的工作流程，例如发布你的Mac应用但是不上架到Mac App Store。如果想全面掌握配置应用、发布应用、解决不正常问题阅读App Distribution Guide，当然你得继续阅读本文。专业词汇请参见术语表（附件）。
 
 ### 准备工作
 
@@ -575,9 +575,70 @@ Xcode是向一个App ID添加权利（开启的应用服务权利），而不是
 在你提交应用到商店之前，阅读适合你的平台的用户交互指南，更重要的是阅读提交应用到商店的的指南。
 
 学习内容 | 参考资料
------------------ | -----------------
+------| ------
 用户交互指南 | iOS Hunman Interface Guidelines
 
+---
+
+## 术语表
+
+**ad hoc provisioning profile** 一种iOS、tvOS、watchOS等应用用来发布参与测试的配置文件
+
+**App ID** 一个能证明来自同一个团队的一个或多个应用的字符串，一个App ID由一个team ID开头的bundle ID搜索字符串组成，而team ID是由苹果用来区分开发者团队的一个10字符的独一无二的字符串。
+
+**Apple Developer Program** 相关订阅服务向苹果开发者提供科技资源，支持开发iOS、watchOS、tvOS和Mac应用到商店。
+
+**Apple ID** 一个苹果发行的由姓名和密码组成的开发者账号，开发者使用Apple ID为凭证登录任何一个苹果开发者工具，一个开发者或者说一个Apple ID可以属于多个组织。
+
+**Apple Push Notification Service(APNS)** 苹果官方提供给开发者实现向应用推送消息的服务，一个由该服务推送出去的消息，被称为推送通知。
+
+**Apple TV App Store** 一个提供tvOS应用购买和下载的服务，苹果TV应用商店可运行在装有视频系统的设备上。
+
+**Apple Worldwide Developer Relations certification Authority** 苹果全球开发者关系证书颁发机构，颁发开发证书和部署证书供提交应用到商店。
+
+**App Store** 一个可以购买和下载iOS和watchOS应用的服务，App Store存于在iOS设备中、Mac上iTunes Store中、还有Windows电脑。
+
+**bundle ID** 一个能精准标识一个app的反向DNS命名的字符串。
+
+**bundle ID search string** 由开发者用来匹配一系列bundle ID而提供的App ID的第二组成部分。例如，如果一个bundle ID的搜索字符串是 `com.mycompany.MyApp` 或者是通配的 `com.mycompany.*` ，那它和bundle ID `com.mycompany.MyApp` 匹配。
+
+**certificate authority** 一个组织机构签署的凭证。
+
+**Certificates，Identifiers & Profiles** 开发者账户中一个区域，存放你用来开发iOS、tvOS、watchOS、Mac应用、Safari Extensions要用到的资源。
+
+**certificate signing request（CSR）** 一个包含个人信息、用来生成签名凭证的文件，这个文件包含有公钥并且会随着签名信息包含在凭证中。
+
+**client SSL certificate** 该凭证使开发者的服务器连接到苹果的服务，例如，开发者使用一个客户端SSL凭证连接苹果推送通知服务。
+
+**code signing certificate** 一个用来签署应用或者安装的凭证
+
+**crash report** 当应用崩溃的时候由系统生成的报告。
+
+**data protection** 由应用向磁盘文件添加的一定安全级别的数字签名。
+
+**Developer ID** 用户发布不上架Mac商店的code-signed应用，这一特性的名称。
+
+**developer account** 在 [developer.apple.com/account](https://developer.apple.com/account) 上的账户，用来存储标识、凭证和配置文件。
+
+**developer profile** 一个包含了开发者开发凭证、发布凭证、配置文件等的文件。
+
+**development certificate** 一种签名凭证，在开发阶段用来区分一个team中每一个开发者，它使应用通过Xcode运行在真机上。
+
+**development provisioning profile** 在开发阶段，一种签署有特定功能并运行在指定设备上的配置文件，这个文件由一个名字、多个开发证书、多个设备、一个App ID构成。
+
+**device** 如果没有区分的必要时，app所运行的真机都统称为设备。对于iOS应用，设备会是一台iPad、iPhone、或者iPod touch，对于tvOS应用，设备是一台Apple TV，对于watchOS而言，设备是Apple Watch和与之配对的iPhone，对于Mac应用，设备是一个台Mac电脑。
+
+**device ID** 一个独特的标识，用来识别苹果设备，包括电脑设备。
+
+**distribution certificate** 一个发布凭证，用来发布一个app并且让app在不借助Xcode帮助时运行在真机设备上，一个发布凭证标识着一个team，而不是一个team member。
+
+**distribution provisioning profile** 一种签名凭证，签署应用在不借助Xcode帮助时运行在真机设备上而且能使用特定的应用服务，凭证用来发布app上架到商店，或者发布而不上架到商店。
+
+**entitlement** 特别的权利，赋予一个特别的app、tool、或者其他可执行文件等一个特权，就是在它们常规的基础上额外加一个权限。
+
+**explicit App ID** 显式APP ID，一个App ID只匹配一个bundle ID，与通配App ID不同，通配App ID可以匹配一个至多个bundle ID。
+
+**Game Center** 苹果的游戏网络中心，连接玩家提供服务的地方，也是玩家与其他玩家交换信息的地方。
 
 
 
