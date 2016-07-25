@@ -626,7 +626,7 @@ Xcode是向一个App ID添加权利（开启的应用服务权利），而不是
 
 **development provisioning profile** 在开发阶段，一种签署有特定功能并运行在指定设备上的配置文件，这个文件由一个名字、多个开发证书、多个设备、一个App ID构成。
 
-**device** 如果没有区分的必要时，app所运行的真机都统称为设备。对于iOS应用，设备会是一台iPad、iPhone、或者iPod touch，对于tvOS应用，设备是一台Apple TV，对于watchOS而言，设备是Apple Watch和与之配对的iPhone，对于Mac应用，设备是一个台Mac电脑。
+**device** 如果没有明确区分时，app所运行的真机都统称为设备。对于iOS应用，设备会是一台iPad、iPhone、或者iPod touch，对于tvOS应用，设备是一台Apple TV，对于watchOS而言，设备是Apple Watch和与之配对的iPhone，对于Mac应用，设备是一个台Mac电脑。
 
 **device ID** 一个独特的标识，用来识别苹果设备，包括电脑设备。
 
@@ -640,10 +640,63 @@ Xcode是向一个App ID添加权利（开启的应用服务权利），而不是
 
 **Game Center** 苹果的游戏网络中心，连接玩家提供服务的地方，也是玩家与其他玩家交换信息的地方。
 
+**iCloud** 数据存储，是开发者共享用户的数据以一个应用的多个实例运行在iOS和OS X相关设备。
 
+**In-App Purchase** 内购机制，开发人员直接将其他应用产品集成在一个应用内售卖，这样一来
 
+**individual** 独立开发者，开发者账户中只有一个开发者。
 
+**intermediate certificate** 媒介证书，存在于开发者钥匙串中，用来保证签名凭证是由可信任的来源发布的。
 
+**iOS App file** 一种OS X环境下的文件，可以安装在iOS和tvOS设备上。
+
+**iOS App Store Package** 一种OS X环境下的文件，双击的时候，会在iTunes中安装app，可以同步到连接到Mac上的那台设备上。
+
+**iOS Dev Center** 苹果开发者中心，提供了开发iOS应用所需的所有资源。
+
+**Mac Installer Package** 一种OS X环境下的文件，双击的时候，在电脑上运行并安装成Mac应用
+
+**Newsstand** 一个iOS应用，将采购、组织新闻和杂志订阅集成到一个文件夹中。
+
+**organization** 机构，它拥有一个或多个团队成员。
+
+**passes** 数字表示用户能够兑换实际产品或服务的信息，如一张优惠券，一场演出门票，或者一张机票。
+
+**provisioning** 准备和配置应用的过程，真机调试和配置开启应用服务的过程。
+
+**provisioning profile** 一种系统文件，用来服务一个或者多个应用。
+
+**push notification** 应用不在前台的环境下，通过苹果推送通知服务向用户发送的一条消息。
+
+**routing app** 应用程序提供路由信息,如逐向道路导航服务。应用程序可以注册作为一个路由应用程序和提供这些方向给地图应用和其他应用程序。
+
+**signing certificate** 一个用来验证其他条目的凭证，如安装程序包、电子邮件等等。
+
+**signing identify** 一个用来签名的数字身份，包含了打包签名。一个签名身份包含了凭证、凭证含有公钥和私钥，存储在钥匙链中。
+
+**store** 是对应用商店的统一称谓，在没有明确区分的时候，指Apple Tv商店或者Mac应用商店。
+
+**symbolicate** 在崩溃信息中，用人类可读的函数名和行号来替换内存地址。
+
+**team admin** 一个开发者或者开发者团队，拥有团队总代理的某些权力，但是不能注册协议。团队管理员替机构总代理分担一些责任。详见比较team agent和team member。
+
+**team agent** 开发者团队中的一人，对团队拥有绝对的权力和背负团队的合法责任，详见比较team agent和team member。
+
+**team ID** 一个由苹果生成用来标识一个团队的10个字符的字符串，team ID用来做App ID命名的开头。
+
+**team member** 在开发者团队拥有比较少权力的普通开发者成员，一个团队普通成员在团队管理员批准后，在开发阶段是可以注册应用的。
+
+**team provisioning profile** 由Xcode创建并管理的开发配置文件，开发配置文件包含一个团队的开发证书、注册的设备、通配App ID。
+
+**tvOS** 运行在Apple TV设备上的系统。
+
+**Wallet** 一个用来管理用户执照、票据、优惠券的应用。
+
+**watchOS** 运行在Apple Watch设备上的系统。
+
+**wildcard App ID** 一个能匹配一个或者多个bundle ID的App ID，与显式App ID比较。
+
+**XC wildcard** 由Xcode为开发者管理的通配App ID。
 
 
 
