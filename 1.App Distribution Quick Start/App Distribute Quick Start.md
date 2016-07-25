@@ -564,10 +564,19 @@ Xcode是向一个App ID添加权利（开启的应用服务权利），而不是
 在**App Distribution Guide（app开发上架指南）**查阅以下相关章节，找到在app生命周期方法中要运行的任务。
 
 
-学习内容 | 参考治疗
+学习内容 | 参考资料
 ------- | ------
 对于企业机构，如何添加团队成员、分配角色、核实批准证书、注册设备 | Managing Your Team in Member Center
+构建app版本并添加iTunes Connect用户 | Managing Your App in iTunes Connect
+在发布app之前最后的配置步骤 | Configuring Your Xcode Project fo Distribution
+发布应用进行beta测试 | Exporting You App for Testing， uploading Your App to iTunes Connect， Distribution Your App using TestFlight
+提交应用予以审核 | 提交应用
 
+在你提交应用到商店之前，阅读适合你的平台的用户交互指南，更重要的是阅读提交应用到商店的的指南。
+
+学习内容 | 参考资料
+------- | -------
+用户交互指南 | iOS Hunman Interface Guidelines
 
 
 
