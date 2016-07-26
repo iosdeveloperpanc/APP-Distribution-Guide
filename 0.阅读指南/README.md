@@ -1,6 +1,6 @@
 #APP-Distribution-Guide
 
-翻译，GO~
+翻译，go~
 
 >知识是人类进步的阶梯
 
@@ -18,3 +18,5 @@ Xcode 7.3 | iOS 9.3
 请先阅读 App Distribution Quick Start 
 
 再阅读 App Distribution Guide
+
+App Distribution Quick Start 是 App Distribution Guide 的简述，也可说是前言。
